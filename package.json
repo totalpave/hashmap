@@ -1,6 +1,6 @@
 {
   "name": "@totalpave/hashmap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generic hashmap collection class",
   "main": "lib/api.js",
   "types": "lib/api.d.ts",
@@ -26,6 +26,9 @@
     "total",
     "pave"
   ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "author": "norman.breau@totalpave.com",
   "license": "MIT",
   "bugs": {
