@@ -9,3 +9,5 @@ script:
   - npm run-script lint
   - npm run-script unit
   - npm run-script build
+env:
+  - NPM_TOKEN="travis"
