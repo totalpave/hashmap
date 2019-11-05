@@ -1,0 +1,8 @@
+src
+.npmrc
+tsconfig.json
+tsconfig-tests.json
+spec
+.nyc_output
+coverage
+nyc.config.js
