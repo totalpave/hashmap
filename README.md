@@ -1,5 +1,7 @@
 # @totalpave/hashmap
 
+[![Build Status](https://travis-ci.org/totalpave/hashmap.svg?branch=master)](https://travis-ci.org/totalpave/hashmap)
+
 ## Description
 
 A generic hashmap collection class
