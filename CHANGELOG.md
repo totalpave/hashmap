@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.2-dev
+## 1.0.2
 - dependency roll
 - Added `iterator()` API that returns a `DictionaryIterator`
 - Added `toArray()` API that returns an array of `HashMap` values.
