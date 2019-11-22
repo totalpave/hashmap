@@ -9,7 +9,7 @@
     "lint": "node --max_old_space_size=6144 ./node_modules/eslint/bin/eslint.js --ext .ts '?(src|spec)/**/*.ts' --cache",
     "unit": "ts-node ./spec/support/jasmine.ts",
     "test": "npm run-script lint && nyc --reporter=lcov --reporter=text ts-node ./spec/support/jasmine.ts",
-    "prepublishOnly": "npm run-script build && npm run build-docs",
+    "prepublishOnly": "npm run-script build && npm run docs",
     "docs": "typedoc --options typedoc.json"
   },
   "repository": {
