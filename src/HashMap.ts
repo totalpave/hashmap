@@ -22,6 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
+import {
+    DictionaryIterator
+} from '@breautek/iterator';
+
 export interface IHashMapData<T> {
     [key: string]: T;
 }
@@ -45,4 +49,21 @@ export default class HashMap<T> {
     public keys(): Array<string> {
         return Object.keys(this._data);
     }
+
+    public iterator(): DictionaryIterator<T> {
+        return new DictionaryIterator(this._data);
+    }
+
+    public toArray(): Array<T> {
+        let arr: Array<T> = [];
+
+        let iterator: DictionaryIterator<T> = this.iterator();
+        while (iterator.hasNext()) {
+            arr.push(iterator.next().value);
+        }
+
+        return arr;
+    }
 }
+
+export {HashMap};

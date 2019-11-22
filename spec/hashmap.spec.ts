@@ -1,6 +1,7 @@
 
 
 import HashMap, {IHashMapData} from '../src/HashMap';
+import {DictionaryIterator} from '@breautek/iterator';
 
 describe('HashMap', () => {
     describe('constructor', () => {
@@ -49,5 +50,23 @@ describe('HashMap', () => {
             let keys: Array<string> = hmap.keys();
             expect(keys).toEqual([ 'fname', 'lname' ]);
         });
+    });
+
+    it('iterator', () => {
+        let hmap: HashMap<string> = new HashMap<string>({
+            fname: 'John',
+            lname: 'Smith'
+        });
+
+        expect(hmap.iterator() instanceof DictionaryIterator).toBe(true);
+    });
+
+    it('toArray', () => {
+        let hmap: HashMap<string> = new HashMap<string>({
+            fname: 'John',
+            lname: 'Smith'
+        });
+
+        expect(hmap.toArray()).toEqual([ 'John', 'Smith' ]);
     });
 });

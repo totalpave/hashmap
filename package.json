@@ -51,6 +51,7 @@
     "typescript": "3.7.2"
   },
   "dependencies": {
+    "@breautek/iterator": "2.0.0",
     "@types/node": "12.12.11"
   }
 }

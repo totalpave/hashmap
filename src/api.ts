@@ -26,3 +26,6 @@ import HashMap from './HashMap';
 
 export default HashMap;
 export {HashMap};
+
+// Expose iterator classes for typings
+export * from '@breautek/iterator';
