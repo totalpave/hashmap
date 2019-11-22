@@ -10,7 +10,7 @@
     "unit": "ts-node ./spec/support/jasmine.ts",
     "test": "npm run-script lint && nyc --reporter=lcov --reporter=text ts-node ./spec/support/jasmine.ts",
     "prepublishOnly": "npm run-script build && npm run build-docs",
-    "build-docs": "typedoc --excludePrivate --excludeNotExported --tsBuildInfoFile ./docs/.tsbuildinfo --mode file -readme ./README.md --out ./docs ./src"
+    "docs": "typedoc --options typedoc.json"
   },
   "repository": {
     "type": "git",
