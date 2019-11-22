@@ -1,6 +1,6 @@
 {
   "name": "@totalpave/hashmap",
-  "version": "1.0.2",
+  "version": "1.0.3-dev",
   "description": "A generic hashmap collection class",
   "main": "lib/api.js",
   "types": "lib/api.d.ts",
