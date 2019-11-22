@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2-dev
+- 
+
 ## 1.0.1
 - Defined supported Node Versions. Currently Node 10 or higher.
 
