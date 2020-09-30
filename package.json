@@ -46,7 +46,7 @@
     "eslint": "6.7.0",
     "jasmine": "3.5.0",
     "jasmine-spec-reporter": "4.2.1",
-    "nyc": "14.1.1",
+    "nyc": "15.1.0",
     "ts-node": "8.5.2",
     "tslib": "1.10.0",
     "tsutils": "3.17.1",
