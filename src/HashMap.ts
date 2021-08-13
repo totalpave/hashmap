@@ -31,27 +31,27 @@ export interface IHashMapData<T> {
 }
 
 export default class HashMap<T> {
-    private _data: IHashMapData<T>;
+    private $data: IHashMapData<T>;
 
     public constructor(data?: IHashMapData<T>) {
-        this._data = data || {};
+        this.$data = data || {};
     }
 
     public set(key: string, value: T): HashMap<T> {
-        this._data[key] = value;
+        this.$data[key] = value;
         return this;
     }
 
     public get(key: string): T {
-        return this._data[key];
+        return this.$data[key];
     }
 
     public keys(): Array<string> {
-        return Object.keys(this._data);
+        return Object.keys(this.$data);
     }
 
     public iterator(): DictionaryIterator<T> {
-        return new DictionaryIterator(this._data);
+        return new DictionaryIterator(this.$data);
     }
 
     public toArray(): Array<T> {
